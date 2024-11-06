@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: pleblond <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/05 09:35:06 by pleblond           #+#    #+#             */
-/*   Updated: 2024/11/05 21:48:24 by pleblond         ###   ########.fr       */
+/*   Created: 2024/11/06 01:28:47 by pleblond          #+#    #+#             */
+/*   Updated: 2024/11/06 01:30:11 by pleblond         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static int	ft_print_hex(unsigned int nb, char *base)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	if (nb >= 16)
@@ -23,6 +23,7 @@ static int	ft_print_hex(unsigned int nb, char *base)
 	i++;
 	return (i);
 }
+
 int	lequelchoisir(unsigned int nb, char c)
 {
 	if (c == 'x')

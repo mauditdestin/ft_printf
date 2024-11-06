@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: pleblond <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/04 12:38:55 by pleblond           #+#    #+#             */
-/*   Updated: 2024/11/05 21:47:28 by pleblond         ###   ########.fr       */
+/*   Created: 2024/11/06 01:29:03 by pleblond          #+#    #+#             */
+/*   Updated: 2024/11/06 01:30:19 by pleblond         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 static int	put_nbr_base(unsigned long nb, char *base)
 {
 	int	i;
-	
+
 	i = 0;
 	if (nb >= 16)
 	{
