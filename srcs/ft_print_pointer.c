@@ -6,13 +6,13 @@
 /*   By: pleblond <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 01:29:03 by pleblond          #+#    #+#             */
-/*   Updated: 2024/11/06 01:30:19 by pleblond         ###   ########.fr       */
+/*   Updated: 2024/11/16 13:26:35 by pleblond         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../ft_printf.h"
+#include "../includes/ft_printf.h"
 
-static int	put_nbr_base(unsigned long nb, char *base)
+static int	put_nbr_base(unsigned long long nb, char *base)
 {
 	int	i;
 
@@ -32,8 +32,11 @@ int	ft_print_pointer(void *ptr)
 
 	i = 0;
 	if (!ptr)
-		return (write(1, "(nil)", 5));
+	{
+		write(1, "(nil)", 5);
+		return (5);
+	}
 	i += write (1, "0x", 2);
-	i += put_nbr_base((unsigned long)ptr, "0123456789abcdef");
+	i += put_nbr_base((unsigned long long)ptr, "0123456789abcdef");
 	return (i);
 }

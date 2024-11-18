@@ -6,7 +6,7 @@
 /*   By: pleblond <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 01:29:18 by pleblond          #+#    #+#             */
-/*   Updated: 2024/11/06 01:29:27 by pleblond         ###   ########.fr       */
+/*   Updated: 2024/11/16 12:16:30 by pleblond         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <stdarg.h>
 # include <unistd.h>
+# include <stdio.h>
 
 int		ft_printf(const char *format, ...);
 int		ft_print_string(va_list args);
